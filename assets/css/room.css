@@ -1,0 +1,140 @@
+/* ROOM */
+.app_room {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.app_room-container {
+  display: flex;
+  gap: 30px;
+}
+
+.app_room-details,
+.app_room-img {
+  width: 600px;
+}
+
+.app_room-icons {
+  background: var(--gray-100-color);
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px;
+  place-items: space-between;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.app_room-icon {
+  background: var(--white-color);
+  padding: 2px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 9px;
+}
+
+.app_room-icon i {
+  font-size: 35px;
+}
+
+.app_room-info {
+  margin-top: 35px;
+}
+
+.app_room-info-title {
+  font-size: 25px;
+  color: #695c5c;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.app_room-info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 2px;
+  border-bottom: 1px solid #000;
+}
+
+.app_room-info-item span:first-child {
+  color: #695c5c;
+}
+
+.app_room-payment {
+  width: 300px;
+  background: #160900;
+  padding: 25px;
+  margin: auto;
+}
+
+.app_room-payment-date {
+  background: var(--gray-100-color);
+  padding: 7px 9px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app_room-payment-price {
+  margin-top: 30px;
+  margin-bottom: 27px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.app_room-payment-price span {
+  font-size: 25px;
+}
+
+.app_room-payment-btn {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Wellfleet", cursive;
+  font-weight: 400;
+  background: #000343;
+  border: 2px solid #bb5e08;
+  color: var(--white-color);
+}
+
+.app_room-description {
+  margin-top: 70px;
+  font-size: 15px;
+  color: #695c5c;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .app_room-container {
+    flex-direction: column;
+  }
+
+  .app_room-details,
+  .app_room-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app_room-icons {
+    grid-template-columns: 80px 80px 80px 80px 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app_room-icons {
+    grid-template-columns: 80px 80px 80px 80px;
+  }
+}
+
+@media (max-width: 425px) {
+  .app_room-icons {
+    grid-template-columns: 80px 80px 80px;
+  }
+}

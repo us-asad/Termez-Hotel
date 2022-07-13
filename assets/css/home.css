@@ -1,0 +1,452 @@
+/* CHECK RATES */
+
+.app_check-rates {
+  background: #fff;
+  padding: 76px 40px;
+  margin-bottom: 150px;
+  color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.app_check-rates > li:not(:last-child) {
+  background: var(--gray-100-color);
+  padding: 10px 14px;
+  display: flex;
+  position: relative;
+  height: max-content;
+}
+
+.app_check-rates-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  left: 0;
+  height: max-content;
+  background-color: inherit;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all var(--transition-time);
+  z-index: 1;
+}
+
+#guests-dropdown:checked ~ .app_check-rates-dropdown {
+  top: 100%;
+  pointer-events: all;
+  opacity: 1;
+}
+
+#children-dropdown:checked ~ .app_check-rates-dropdown {
+  top: 100%;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.app_check-rates-dropdown > li {
+  padding: 10px 14px;
+  transition: all 200ms;
+  cursor: pointer;
+  border-top: 1px solid var(--gray-200-color);
+}
+
+.app_check-rates-dropdown > li:hover {
+  background: var(--gray-200-color);
+}
+
+.app_check-rates > li:first-child i {
+  margin-left: 15px;
+}
+
+.app_check-rates-dropdown-toggler {
+  display: flex;
+  cursor: pointer;
+}
+
+.app_check-rates-dropdown-toggler i {
+  margin-left: 20px;
+}
+
+.app_check-rates-btn {
+  padding: 9px 44px;
+  background: var(--orange-color);
+  color: var(--white-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all var(--transition-time);
+}
+
+.app_check-rates-btn:hover {
+  background: #ff9635;
+}
+
+
+.app_check-rates-input {
+  background: transparent;
+  margin: 0 4px;
+}
+
+
+
+
+
+
+/* SERVICES */
+
+.app_services-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  padding: 50px 0px 150px 0px;
+  gap: 10%;
+  color: var(--white-color);
+}
+
+.service-box-1 {
+  background-image: url(/assets/images/services/1.png);
+}
+
+.service-box-2 {
+  background-image: url(/assets/images/services/2.png);
+}
+
+.service-box-3 {
+  background-image: url(/assets/images/services/3.png);
+}
+
+.service-box-4 {
+  background-image: url(/assets/images/services/4.png);
+}
+
+.app_services-box {
+  width: 500px;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 25px;
+  display: grid;
+  place-content: center;
+  line-height: 39px;
+  letter-spacing: 0.09em;
+  transition: all var(--transition-time);
+}
+
+.app_services-box:hover {
+  background-size: 120%;
+}
+
+.app_services-box i {
+  margin-bottom: 3px;
+  font-size: 50px;
+  display: grid;
+  place-content: center;
+}
+
+
+
+
+
+
+
+/* ROOMS */
+
+.app_rooms {
+  padding-bottom: 30px;
+}
+
+.app_rooms-carousel {
+  overflow-x: auto;
+}
+
+.app_rooms-container {
+  display: flex;
+  width: max-content;
+  overflow-x: hidden;
+}
+
+.app_rooms-box {
+  margin: 0 10px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.app_rooms-box-details {
+  padding: 10px 15px;
+}
+
+.app_rooms-box-img {
+  width: 100%;
+}
+
+.app_rooms-box-title {
+  font-weight: 400;
+  margin-bottom: 13px;
+  color: #292525;
+  transition: all var(--transition-time);
+  cursor: pointer;
+}
+
+.app_rooms-box-title:hover {
+  color: rgb(65, 65, 255);
+}
+
+.app_rooms-box-info {
+  display: flex;
+  align-items: center;
+}
+
+.app_rooms-box-info i {
+  font-size: 25px;
+  color: var(--orange-color);
+}
+
+.app_rooms-box-info span {
+  margin-left: 10px;
+  font-size: 13px;
+  color: #333333;
+}
+
+.app_rooms-box-description {
+  margin: auto;
+  width: 90%;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.app_rooms-box-btn {
+  display: grid;
+  place-content: center;
+  margin-top: 15px;
+}
+
+.app_rooms-box-btn a {
+  padding: 9px;
+  border: 2px solid var(--orange-color);
+  width: fit-content;
+  letter-spacing: 0.1em;
+  margin: auto;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.app_rooms-box-btn a:hover {
+  background: var(--orange-color);
+  color: var(--white-color);
+}
+
+.app_rooms-carousel {
+  scroll-snap-type: x mandatory;
+}
+
+.app_rooms-carousel-controller {
+  margin-top: 20px;
+  display: flex;
+  place-content: center;
+}
+
+.app_rooms-carousel-prev {
+  margin-right: 5px;
+}
+
+.app_rooms-carousel-next {
+  margin-left: 5px;
+}
+
+.app_rooms-carousel-btn {
+  padding: 4px;
+  font-size: 20px;
+  background: var(--orange-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.app_rooms-carousel-btn:hover {
+  background: var(--white-color);
+  color: var(--orange-color);
+}
+
+
+
+
+
+
+
+
+/* GALLERY */
+.app_gallery {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.app_gallery .section-title {
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.app_gallery-icon {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+.app_gallery-slider {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+.app_gallery-container {
+  position: relative;
+}
+
+.app_gallery-img {
+  width: 100%;
+}
+
+.app_gallery-box {
+  margin: 0 50px;
+  transition: all var(--transition-time);
+  min-width: 60vw;
+  height: 500px;
+  overflow: hidden;
+}
+
+.app_gallery-box img {
+  transition: all 500ms;
+}
+
+.app_rooms-box-img-container:hover .app_rooms-box-popup {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.app_rooms-box-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.app_rooms-box-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.668);
+  display: grid;
+  place-content: center;
+  font-size: 50px;
+  color: white;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.app_rooms-box-popup i {
+  opacity: .6;
+}
+
+.app_gallery-box.active:hover img {
+  transform: scale(1.4);
+}
+
+.app_gallery-box.active {
+  transform: scale(1.1);
+}
+
+.app_gallery-slider-btn {
+  padding: 10px 11px;
+  background: #FF4D00;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.app_gallery-slider-btn.completed {
+  background: #6B2727;
+  transform: translateY(-50%) scale(0.8);
+}
+
+.app_gallery-slider-btn:hover {
+  background: #6B2727;
+}
+
+.app_gallery-slider-prev {
+  left: 50px
+}
+
+.app_gallery-slider-next {
+  right: 50px
+}
+
+.app_gallery-slider-btn i {
+  color: #fff;
+  font-size: 20px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .app_services-container {
+    grid-template-columns: auto;
+    gap: 3% 0;
+  }
+
+  .app_gallery-box {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app_check-rates {
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 40px 20px;
+  }
+
+  .app_check-rates-dropdown-toggler {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .app_check-rates-btn {
+    display: block;
+    width: 100%;
+  }
+
+  .app_gallery-box {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app_gallery-box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app_services-box {
+    width: 90vw;
+    height: 200px;
+  }
+  .app_services-box i {
+    margin-bottom: 10px;
+  }
+  
+  .app_services-box h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+
+  .app_gallery-box {
+    height: 150px;
+  }
+}

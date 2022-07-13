@@ -1,0 +1,107 @@
+/* CONTACT */
+.app_contact {
+  margin: 60px 0;
+}
+
+.app_contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.app_contact-details {
+  width: 40%;
+}
+
+.app_contact-title {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.app_contact-text {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.app_contact-items {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app_contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.app_contact-item i {
+  font-size: 25px;
+  color: var(--orange-color)
+}
+
+.app_contact-send-message {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app_contact-forms {
+  display: flex;
+  gap: 30px;
+}
+
+.app_contact-form {
+  width: 100%;
+  margin: 10px 0;
+  font-family: "Wellfleet", cursive;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 2px solid var(--black-color);
+}
+
+.app-contact-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 19px 10px;
+  background: var(--orange-color);
+  color: var(--white-color);
+  font-family: "Wellfleet", cursive;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-time);
+}
+
+.app-contact-btn:hover {
+  background: #f32d00;
+}
+
+textarea.app_contact-form {
+  height: 200px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .app_contact-container {
+    flex-direction: column;
+  }
+
+  .app_contact-details, .app_contact-send-message {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .app_contact-title {
+    font-size: 40px;
+  }
+  
+  .app_contact-forms {
+    flex-direction: column;
+    gap: 0;
+  }
+}
